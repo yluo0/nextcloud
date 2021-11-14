@@ -8,6 +8,12 @@ Include /etc/apache2/vhosts.d/*.conf
 
 
 By default, Apache in openSUSE Leap is prepared for one configuration file per virtual host in /etc/apache2/vhosts.d/. All files in this directory with the extension .conf are automatically included to the configuration. A basic template for a virtual host is provided in this directory (vhost.template or vhost-ssl.template for a virtual host with SSL support).
+
+The virtual host configuration directory contains a template /etc/apache2/vhosts.d/vhost-ssl.template with SSL-specific directives that are extensively documented. Refer to Section 24.2.2.1, “Virtual host configuration” for the general virtual host configuration.
+
+To get started, copy the template to /etc/apache2/vhosts.d/MYSSL-HOST.conf and edit it. Adjusting the values for the following directives should be sufficient:
+
+
 cp & rename :/etc/apache2/vhosts.d/vhost-ssl.template to /etc/apache2/vhosts.d/*.conf 
 edit 
 
